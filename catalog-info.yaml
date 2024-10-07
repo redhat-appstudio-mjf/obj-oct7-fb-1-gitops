@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: obj-oct7-fb-1-gitops
+  description: This is GitOps manifest for obj-oct7-fb-1   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: obj-oct7-fb-1
+    janus-idp.io/tekton: obj-oct7-fb-1 
+    backstage.io/kubernetes-id: obj-oct7-fb-1 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:obj-oct7-fb-1

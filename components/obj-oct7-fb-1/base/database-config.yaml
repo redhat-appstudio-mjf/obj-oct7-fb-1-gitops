@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: obj-oct7-fb-1-database-config
+data:
+  VECTORDB_HOST: "obj-oct7-fb-1-database"
+  VECTORDB_PORT: ""

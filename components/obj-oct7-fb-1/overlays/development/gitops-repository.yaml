@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: obj-oct7-fb-1-gitops-repository
+spec:
+  url: https://github.com/redhat-appstudio-mjf/obj-oct7-fb-1-gitops
